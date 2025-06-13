@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <main className="min-h-screen bg-[#10100f] p-40">
+      <main className="min-h-screen bg-[#10100f]">
       </main>
     </div>
   );
