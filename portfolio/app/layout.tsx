@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="">
       <body
-        className={`font-neue antialiased bg-[#10100f]`}
+        className={`font-neue antialiased bg-[#101010]`}
       >
         {children}
       </body>
