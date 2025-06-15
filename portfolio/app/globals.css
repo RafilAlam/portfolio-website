@@ -123,6 +123,18 @@
   font-family: 'Gloock', serif;
 }
 
+html {
+  scroll-behaviour: smooth;
+}
+
+* {
+  scrollbar-width: none; /* "auto" | "thin" | "none" */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
