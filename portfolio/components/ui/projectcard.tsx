@@ -14,7 +14,7 @@ export default function ProjectCard(props: any) {
                         <div id="card-top" className="z-1 flex flex-col relative gap-[8px]">
                             <div id="title-row" className="flex justify-between text-shadow-[0_-2px_10px_#fff3] tracking-0">
                                 <div id="title" className="flex text-[24px] font-medium">{props.title}</div>
-                                <Image id="arrow" src="https://web.archive.org/web/20240904115935im_/https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/641284285486aaab07feafaa_icon-arrow-project.svg" width="32" height="32" alt=""></Image>
+                                <Image id="arrow" className="group-hover:translate-x-2 ease-out duration-500" src="https://web.archive.org/web/20240904115935im_/https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/641284285486aaab07feafaa_icon-arrow-project.svg" width="32" height="32" alt=""></Image>
                             </div>
                             <div id="description-row" className="text-[#f2f2f280]">
                                 <span id="company" className="text-[#f2f2f2cc]">{props.company} </span>
