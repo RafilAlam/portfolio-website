@@ -7,7 +7,7 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
-export default function Navbar() {
+export default function Navbar(props: any) {
     const pill = useRef(null);
     const indglow = useRef(null);
     const indpill = useRef(null);
@@ -16,14 +16,6 @@ export default function Navbar() {
     const githubref = useRef(null);
 
     const router = useRouter();
-
-    const pillhoverenter = () => {
-        gsap.to(pill.current, {boxShadow: "0 15px 40px #0000004d", borderColor: "#f2f2f233", backgroundColor: "#f2f2f214", duration: 0.5, ease: "power1.out"})
-    }
-
-    const pillhoverleave = () => {
-        gsap.to(pill.current, {boxShadow: "0 10px 25px #00000026", borderColor: "#f2f2f21a", backgroundColor: "#f2f2f20d", duration: 0.4, ease: "power2.out"})
-    }
 
     const tab1click = (href: string) => {
         gsap.to(indpill.current, {width: "80px", left: "6px", duration: 0.4, ease: "power2.out"})
@@ -45,11 +37,11 @@ export default function Navbar() {
                 </div>
             </div>
             <div id="nav-pill-wrapper" className="">
-                <div id="nav-indicator-glow" ref={indglow} className="w-[24px] h-[4px] rounded-[2px] bg-[#f2f2f2] shadow-[0_2px_25px_2px_#fff] ml-[33px] mb-[-2px]"></div>
+                <div id="nav-indicator-glow" ref={indglow} className={`w-[24px] h-[4px] rounded-[2px] bg-[#f2f2f2] shadow-[0_2px_25px_2px_#fff] ${props.tab === "1" ? "ml-[33px]" : "ml-[120px]"} mb-[-2px]`}></div>
                 <div id="nav-pill" ref={pill} className="flex bg-[#f2f2f20d] backdrop-blur-md border border-[#f2f2f21a] rounded-4xl p-1 pl-[6] pr-[6] gap-2 shadow-[0_10px_25px_#00000026] hover:shadow-[0_15px_40px_#0000004d] hover:border-[#f2f2f233] hover:bg-[#f2f2f214] [transition:border-color_.6s_cubic-bezier(.165,.84,.44,1),_box-shadow_1s_cubic-bezier(.23,1,.32,1)]">
-                    <div onClick={() => tab1click("")} className="bg-transparent border-inherit rounded-4xl text-[15px] text-center p-2 pl-6 pr-6 hover:bg-[linear-gradient(to_right,_#0000,_#f2f2f20d)]">Work</div>
-                    <div onClick={() => tab2click("")} className="bg-transparent border-inherit rounded-4xl text-[15px] text-center p-2 pl-6 pr-6 hover:bg-[linear-gradient(to_right,_#0000,_#f2f2f20d)]">Info</div>
-                    <div id="nav-indicator-pill" ref={indpill} className="absolute block bg-[#f2f2f20d] rounded-[18px] w-[80px] h-[36px] top-[5px] left-[6px]"></div>
+                    <div onClick={() => tab1click("/")} className="bg-transparent border-inherit rounded-4xl text-[15px] text-center p-2 pl-6 pr-6 hover:bg-[linear-gradient(to_right,_#0000,_#f2f2f20d)]">Work</div>
+                    <div onClick={() => tab2click("/info")} className="bg-transparent border-inherit rounded-4xl text-[15px] text-center p-2 pl-6 pr-6 hover:bg-[linear-gradient(to_right,_#0000,_#f2f2f20d)]">Info</div>
+                    <div id="nav-indicator-pill" ref={indpill} className={`absolute block bg-[#f2f2f20d] rounded-[18px] ${props.tab === "1" ? "w-[80px]" : "w-[70px]"} h-[36px] top-[5px] ${props.tab === "1" ? "left-[6px]" : "left-[96px]"}`}></div>
                 </div>
             </div>
             <div id="socials-wrapper" className="flex items-center gap-2">
