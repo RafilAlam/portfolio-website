@@ -123,6 +123,10 @@
   font-family: 'Gloock', serif;
 }
 
+.font-yellowtail {
+  font-family: 'Yellowtail', cursive;
+}
+
 html {
   scroll-behaviour: smooth;
 }

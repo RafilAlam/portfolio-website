@@ -83,9 +83,9 @@ export default function Home() {
               <div id="hero-noise" className="z-0 top-0 absolute inset-0 w-full h-full opacity-20 bg-size-[200px] bg-blend-overlay bg-[url('https://web.archive.org/web/20240904144252im_/https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/644af0299bc01254815ae442_noise-overlay-2.png')]"></div>
             </div>
             <div id="section-projects" className="z-1 w-full flex flex-col relative gap-[48px] pt-[24px] pb-[200px] pl-[28px] pr-[28px] items-center bg-[#101010]">
-              <ProjectCard title="Art Buddy" glowcolor="#035" company="Pasir Ris Secondary, '25" description="description" src="/project-thumbnails/artbuddy.png" />
-              <ProjectCard title="Art Buddy" glowcolor="#035" company="Pasir Ris Secondary, '25" description="description" src="/project-thumbnails/artbuddy.png" />
-              <ProjectCard title="Art Buddy" glowcolor="#035" company="Pasir Ris Secondary, '25" description="description" src="/project-thumbnails/artbuddy.png" />
+              <ProjectCard title="Art Buddy" glowcolor="#090315" company="Pasir Ris Secondary, '25" description="Giving student artists easy access to inspirational artworks." src="/project-thumbnails/artbuddy.png" />
+              <ProjectCard title="AI Reader" glowcolor="#272828" company="Personal Project, '24" description="Providing researchers, the elderly and visually challenged readers a break." src="/project-thumbnails/ai-reader.png" />
+              <ProjectCard title="TrackMate" glowcolor="#1c1320" company="Personal Project, '23" description="Keeping track of what's important all in one place." src="/project-thumbnails/trackmate.png" />
             </div>
             <div id="section-footer" className="flex relative justify-center border-t-[1px] border-t-[#f2f2f21a] pt-[88px] pb-[80px] px-[48px]">
               <Footer />

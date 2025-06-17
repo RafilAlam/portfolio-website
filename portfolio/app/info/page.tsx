@@ -82,17 +82,60 @@ export default function Home() {
                       <div id="text-hero" className="lg:text-[56px] text-[42px] font-medium lg:leading-[56px] leading-[110%] tracking-[-1px] text-shadow-[0_4px_10px_#0057ff33,_0_-4px_10px_#ff5a0026,_0_0_30px_#fff3]">I'm passionate about creating beautiful products that <span id="text-hero-serif" className="font-gloock italic bg-clip-text text-transparent bg-linear-[to_bottom,_#f2f2f2_50%,_#f2f2f233] text-shadow-[0_4px_6px_#0057ff26,_0_-4px_6px_#ff5a001a,_0_0_20px_#ffffff40]">solve real problems.</span></div>
                   </div>
                   <div id="info-block" className="grid grid-cols-2 gap-[48px]">
-                    <div id="col-left" className="flex flex-col relative w-full z-3">
-                      <ImgCard />
-                      <div id="text" className="flex flex-1 px-[24px] tracking-[0.4px] leading-[150%] text-[16px] font-light text-[#f2f2f299]">
-                        <span id="emphasis" className="text-[18px] font-medium tracking-[0.4px] leading-[150%] text-[#f2f2f2e6]"></span>
+                    <div id="col-left" className="flex flex-col gap-[48px] relative w-full z-3">
+                      <ImgCard src="/info-pictures/main.jpeg" />
+                      <div id="text" className="flex flex-col flex-1 gap-[24px] px-[24px] tracking-[0.4px] leading-[150%] text-[16px] text-[#f2f2f299]">
+                        <span id="emphasis" className="text-[18px] font-medium tracking-[0.4px] leading-[150%] text-[#f2f2f2e6]">My Background in Computer Science.</span>
+                        <div>In February of 2017, when I was just 8, I joined my first CCA Club - Media and IT. I became captivated by how seemingly simple blocks of code could be so powerful.</div>
+                        <div>Through putting my own projects together in Scratch, and playing around with the logic surrounding it, this rising curiosity and underlying passion kept building up.</div>
                       </div>
                     </div>
                     <div id="col-right" className="flex flex-col relative w-full z-3 gap-[48px] pt-[48px]">
                       <div id="text">
-                        <span id="emphasis" className="text-[18px] font-medium tracking-[0.4px] leading-[150%] text-[#f2f2f2e6]"></span>
+                        <span id="emphasis" className="text-[18px] font-medium tracking-[0.4px] leading-[150%] text-[#f2f2f2e6]">This is my story — alongside some flicks from my recent competition at SUTD.</span>
                       </div>
-                      <ImgCard />
+                      <ImgCard src="/info-pictures/groupwork.jpg" />
+                    </div>
+                  </div>
+                  <div id="info-block" className="grid grid-cols-2 gap-[48px]">
+                    <div id="col-left" className="flex flex-col gap-[48px] relative w-full z-3">
+                      <ImgCard src="/info-pictures/leaning.jpeg" />
+                      <div id="text" className="flex flex-col flex-1 gap-[24px] px-[24px] tracking-[0.4px] leading-[150%] text-[16px] text-[#f2f2f299]">
+                        <span id="emphasis" className="text-[18px] font-medium tracking-[0.4px] leading-[150%] text-[#f2f2f2e6]">Making it all happen.</span>
+                        <div>Armed with a family laptop, I chased every bit of tech knowledge I could find in my spare time. Each new concept - from Python's clarity to C's complexity and the inner workings of the computer - felt like a natural puzzle to solve, drawing me deeper into the craft.</div>
+                        <div>As I progressed to secondary education, I proudly represented my school in various competitions, bringing home significant achievements.</div>
+                      </div>
+                    </div>
+                    <div id="col-right" className="flex flex-col relative w-full z-3 gap-[48px] pt-[48px]">
+                      <div id="text" className="flex flex-col gap-[24px] px-[24px] tracking-[0.4px] leading-[150%] text-[16px] text-[#f2f2f299]">
+                        <span id="emphasis" className="text-[18px] font-medium tracking-[0.4px] leading-[150%] text-[#f2f2f2e6]">But, I wanted more.</span>
+                        <div>Though I loved the freedom of practicing computer science, I was greatly dissatisfied with just how slow the activities actually moved.</div>
+                        <div>I wanted to push my learning at a faster pace and delve into more of what my mind was itching to get into.</div>
+                      </div>
+                      <ImgCard src="/info-pictures/robotics.jpg" />
+                    </div>
+                  </div>
+                  <div id="info-block" className="grid grid-cols-2 gap-[48px]">
+                    <div id="col-left" className="flex flex-col gap-[48px] relative w-full z-3">
+                      <ImgCard src="/info-pictures/gazing.jpeg" />
+                      <div id="text" className="flex flex-col flex-1 gap-[24px] px-[24px] tracking-[0.4px] leading-[150%] text-[16px] text-[#f2f2f299]">
+                        <span id="emphasis" className="text-[18px] font-medium tracking-[0.4px] leading-[150%] text-[#f2f2f2e6]">In my spare time,</span>
+                        <div>I'm probably diving into more projects that spark my interest, or simply hanging out friends.</div>
+                        <div>Other than that, you'll find me playing badminton and football, hitting the gym, gaming and reading up on the latest tech.</div>
+                        <br />
+                        <div id="signing" >
+                          <span id="emphasis" className="text-[18px] font-medium tracking-[0.4px] leading-[150%] text-[#f2f2f2e6]">Thanks for stopping by!</span>
+                          <div id="signature" className="font-yellowtail text-[48px] leading-[1.2] py-2 bg-gradient-to-b from-[#f2f2f2cc] via-[#f2f2f299] to-[#f2f2f266] bg-clip-text text-transparent">Rafil</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="col-right" className="flex flex-col relative w-full z-3 gap-[48px] pt-[48px]">
+                      <div id="text" className="flex flex-col gap-[24px] px-[24px] tracking-[0.4px] leading-[150%] text-[16px] text-[#f2f2f299]">
+                        <span id="emphasis" className="text-[18px] font-medium tracking-[0.4px] leading-[150%] text-[#f2f2f2e6]">Using what I loved.</span>
+                        <div>My passion for software extended to teaching, where I regularly guided other students in my free time, sharing my knowledge to help them discover the same joy.</div>
+                        <div>I also engaged in freelance work, applying my knowledge in a professional setting. Through this, I successfully completed several projects and earned my first S$200 from clients that loved my work.</div>
+                      </div>
+                      <ImgCard src="/info-pictures/seated2.jpg" />
                     </div>
                   </div>
                   <div id="hero-noise" className="z-0 absolute inset-0 w-full h-full opacity-20 bg-size-[200px] bg-blend-overlay bg-[url('https://web.archive.org/web/20240904144252im_/https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/644af0299bc01254815ae442_noise-overlay-2.png')]"></div>
@@ -110,13 +153,23 @@ export default function Home() {
                   <div id="content" className="flex flex-col gap-[64px] align-start w-[882px]">
                     <Header text="EXPERIENCE" />
                     <div id="block" className="grid gap-x-[48px] gap-y-[16px] justify-between grid-cols-2">
+                      <div id="content-leading" className="flex flex-col gap-[16px] font-medium -tracking-[0.1px] text-[40px] leading-[125%]">Rimebound Studios</div>
+                      <div id="content-experience" className="flex flex-col gap-[20px] pt-[20px]">
+                        <div id="title-date" className="flex flex-col gap-[8px]">
+                          <div id="title" className="tracking-[0.1px] shrink-[auto] pr-[24px] text-[24px] font-medium leading-[125%]">Contract Game Developer</div>
+                          <div id="date" className="text-[#f2f2f266] text-[16px] font-normal leading-[125%]">09/'24 - 01/'25</div>
+                        </div>
+                        <div id="body-info" className="flex-1 leading-[150%] font-normal tracking-[0.4px] text-[16px] text-[#f2f2f299]"> I took on responsibilities - mentoring developers, building requested features and optimising the existing codebase.</div>
+                      </div>
+                    </div>
+                    <div id="block" className="grid gap-x-[48px] gap-y-[16px] justify-between grid-cols-2">
                       <div id="content-leading" className="flex flex-col gap-[16px] font-medium -tracking-[0.1px] text-[40px] leading-[125%]">Pasir Ris Secondary</div>
                       <div id="content-experience" className="flex flex-col gap-[20px] pt-[20px]">
                         <div id="title-date" className="flex flex-col gap-[8px]">
                           <div id="title" className="tracking-[0.1px] shrink-[auto] pr-[24px] text-[24px] font-medium leading-[125%]">Chairperson of Tinkers' Club</div>
                           <div id="date" className="text-[#f2f2f266] text-[16px] font-normal leading-[125%]">05/'24 - 06/'25</div>
                         </div>
-                        <div id="body-info" className="flex-1 leading-[150%] font-normal tracking-[0.4px] text-[16px] text-[#f2f2f299]">I ran Tinkers' Club and managed activities for members.</div>
+                        <div id="body-info" className="flex-1 leading-[150%] font-normal tracking-[0.4px] text-[16px] text-[#f2f2f299]">I led and managed all club activities, teaching members in programming and data structures, and guiding teams to success in competitions.</div>
                       </div>
                     </div>
                   </div>

@@ -10,7 +10,7 @@ export default function ImgCard(props: any) {
             <div id="card-outline" className="p-[9px] w-full lg:h-[696px] h-[588px] outline-[1px] outline-offset-[-1px] outline-[#f2f2f226] rounded-[24px] bg-[#f2f2f20a] shadow-[0_40px_80px_#00000080]">
                 <div id="card-glare-inner" className="h-[2px] mb-[-1px] bg-linear-[to_right,_#0000_10%,_#fff_50%,_#0000_90%]"></div>
                 <div id="card-main" className="relative rounded-[16px] w-full h-full border-[1px] border-[#3d3d3d] overflow-hidden bg-linear-[190deg,_#252525,_#101010] shadow-[inset_0_0_10px_#0000001a,_0_0_12px_#0006] group hover:border-[#888] transition-colors duration-400 ease-[cubic-bezier(.165,.84,.44,1)]">
-                    <img src={props.src} className="w-full h-full" alt="Image Failed to Load"></img>
+                    <img src={props.src} className="object-cover w-full h-full" alt="Image Failed to Load"></img>
                 </div>
             </div>
         </div>

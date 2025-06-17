@@ -12,9 +12,9 @@ export default function Hero() {
                 <div id="window-main" className="relative rounded-[16px] w-full border-[1px] border-[#f2f2f24d] overflow-hidden shadow-[inset_0_0_10px_#0000001a,_0_0_12px_#0006]">
                     <div id="window-bar" className="flex z-5 items-center pl-[20px] pr-[12px] justify-between w-full h-[40px] backdrop-blur-[40px] bg-linear-[to_right,_#f2f2f21a,_#f2f2f280_50%,_#f2f2f21a] shadow-[0_10px_20px_4px_#0003]">
                         <div id="dots-wrapper" className="flex gap-[10px]">
-                            <div id="dot1" className="w-[12px] h-[12px] border-[#10101040] rounded-[100px] bg-[#ff878b] shadow-[0_0_20px_2px_#ff878b]"></div>
-                            <div id="dot2" className="w-[12px] h-[12px] border-[#10101040] rounded-[100px] bg-[#ffc787] shadow-[0_0_20px_2px_#ffc787]"></div>
-                            <div id="dot3" className="w-[12px] h-[12px] border-[#10101040] rounded-[100px] bg-[#8bff87] shadow-[0_0_20px_2px_#8bff87]"></div>
+                            <div id="dot1" className="w-[12px] h-[12px] border-[#10101040] border-[2px] rounded-[100px] bg-[#ff878b] shadow-[0_0_20px_2px_#ff878b]"></div>
+                            <div id="dot2" className="w-[12px] h-[12px] border-[#10101040] border-[2px] rounded-[100px] bg-[#ffc787] shadow-[0_0_20px_2px_#ffc787]"></div>
+                            <div id="dot3" className="w-[12px] h-[12px] border-[#10101040] border-[2px] rounded-[100px] bg-[#8bff87] shadow-[0_0_20px_2px_#8bff87]"></div>
                         </div>
                         <Image className="opacity-20" width="24" height="24" alt="" src="https://web.archive.org/web/20250114204118im_/https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/64647bd0f92c6bb858b22871_icon-plus.svg"></Image>
                     </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Roboto_Slab } from "next/font/google";
+import { Yellowtail } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -17,6 +18,12 @@ const robotoSlab = Roboto_Slab({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-roboto-slab"
+})
+
+const yellowtail = Yellowtail({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-yellowtail"
 })
 
 export const metadata: Metadata = {
