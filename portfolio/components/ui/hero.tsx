@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Hero() {
     return (
-        <div id="window" className="z-3 relative">
+        <div id="window" className="hidden sm:flex z-3 relative">
             <div id="window-glare-outer" className="absolute inset-0 z-1 h-[1px] bg-linear-[to_right,_#0000_5%,_#fffc_35%,_#fff_50%,_#fffc_65%,_#0000_95%]"></div>
             <div id="window-outline" className="p-[9px] lg:max-w-[1044px] max-w-[882px] w-full outline-[1px] outline-offset-[-1px] outline-[#f2f2f226] rounded-[24px] bg-radial-[circle_farthest-side_at_50%_0,_#f2f2f233,_#0000] shadow-[inset_0_0_8px_#0006,_0_0_60px_#0003,_0_30px_120px_#000c]">
                 <div id="window-glare-inner" className="h-[2px] mb-[-2px] bg-linear-[to_right,_#0000_10%,_#fff_50%,_#0000_90%]"></div>

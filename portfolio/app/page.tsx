@@ -15,6 +15,7 @@ import { Button } from "@/components/ui/button";
 import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
 import Hero from "@/components/ui/hero";
+import MobileHero from "@/components/ui/mobilehero";
 import ProjectCard from "@/components/ui/projectcard"
 
 export default function Home() {
@@ -68,26 +69,27 @@ export default function Home() {
 
   return (
       <div id="body">
-        <div id="section-nav" className="z-10 flex fixed w-full pt-[24px] pl-[48px] pr-[48px] bg-linear-[#0006,#0000]">
+        <div id="section-nav" className="z-10 flex fixed w-full pt-[24px] pl-[24px] pr-[24px] sm:pl-[48px] sm:pr-[48px] bg-linear-[#0006,#0000]">
               <Navbar tab="1" />
         </div>
         <div id="smooth-scroll">
           <div id="smooth-content">
             <div id="section-hero" className="flex z-1 pt-[160px] pb-[4] pl-[48px] pr-[48px] justify-center relative bg-radial-[circle_closest-corner_at_50%_0,_#f2f2f226,_#0000]">
-              <div id="hero-fade" className="flex absolute z-5 h-[200px] pt-[48px] inset-0 top-[auto] justify-center bg-linear-[to_bottom,_#10101000,_#101010_60%]">
+              <div id="hero-fade" className="hidden sm:flex absolute z-5 h-[200px] pt-[48px] inset-0 top-[auto] justify-center bg-linear-[to_bottom,_#10101000,_#101010_60%]">
                 <div id="scroll-wrapper" className="">
                   <Image ref={arrowref} src="https://web.archive.org/web/20240904115935im_/https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/63e206eedd964a5c5db19c91_23-icon-arrow-down.svg" width="40" height="40" alt="" className="relative block opacity-50"></Image>
                 </div>
               </div>
               <Hero />
+              <MobileHero />
               <div id="hero-noise" className="z-0 top-0 absolute inset-0 w-full h-full opacity-20 bg-size-[200px] bg-blend-overlay bg-[url('https://web.archive.org/web/20240904144252im_/https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/644af0299bc01254815ae442_noise-overlay-2.png')]"></div>
             </div>
             <div id="section-projects" className="z-1 w-full flex flex-col relative gap-[48px] pt-[24px] pb-[200px] pl-[28px] pr-[28px] items-center bg-[#101010]">
-              <ProjectCard title="Art Buddy" glowcolor="#090315" company="Pasir Ris Secondary, '25" description="Giving student artists easy access to inspirational artworks." src="/project-thumbnails/artbuddy.png" />
-              <ProjectCard title="AI Reader" glowcolor="#272828" company="Personal Project, '24" description="Providing researchers, the elderly and visually challenged readers a break." src="/project-thumbnails/ai-reader.png" />
-              <ProjectCard title="TrackMate" glowcolor="#1c1320" company="Personal Project, '23" description="Keeping track of what's important all in one place." src="/project-thumbnails/trackmate.png" />
+              <ProjectCard title="Art Buddy" href="https://github.com/RafilAlam/ArtBuddy-WebApp" glowcolor="#090315" company="Pasir Ris Secondary, '25" description="Giving student artists easy access to inspirational artworks." src="/project-thumbnails/artbuddy.png" />
+              <ProjectCard title="AI Reader" href="https://github.com/RafilAlam/AI-Reader" glowcolor="#272828" company="Personal Project, '24" description="Providing researchers, the elderly and visually challenged readers a break." src="/project-thumbnails/ai-reader.png" />
+              <ProjectCard title="TrackMate" href="https://github.com/RafilAlam/TrackMate-App" glowcolor="#1c1320" company="Personal Project, '23" description="Keeping track of what's important all in one place." src="/project-thumbnails/trackmate.png" />
             </div>
-            <div id="section-footer" className="flex relative justify-center border-t-[1px] border-t-[#f2f2f21a] pt-[88px] pb-[80px] px-[48px]">
+            <div id="section-footer" className="flex relative justify-center border-t-[1px] border-t-[#f2f2f21a] pt-[88px] pb-[80px] px-[20px] sm:px-[48px]">
               <Footer />
             </div>
           </div>

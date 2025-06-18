@@ -74,14 +74,14 @@ export default function Home() {
         <div id="smooth-scroll">
           <div id="smooth-content">
             <div id="bg" className="bg-radial-[circle_closest-corner_at_50%_0,_#f2f2f226,_#0000]">
-                <div id="section-about" className="flex flex-col relative gap-[80px] mx-[auto] z-1 pt-[172px] pb-[120px] lg:px-[0px] px-[48px]  lg:max-w-[1044px] justify-center">
-                  <div id="fade" className="z-5 flex flex-col absolute inset-0 top-[auto] items-center h-[200px] pt-[48px] bg-linear-[to_bottom,_#10101000,_#101010_60%]">
+                <div id="section-about" className="flex flex-col relative gap-[40px] sm:gap-[80px] mx-[auto] z-1 pt-[144px] sm:pt-[172px] sm:pb-[120px] lg:px-[0px] sm:px-[48px] px-[16px] pb-[40px] sm:pb-0 lg:max-w-[1044px] justify-center">
+                  <div id="fade" className="hidden sm:flex z-5 flex flex-col absolute inset-0 top-[auto] items-center h-[200px] pt-[48px] bg-linear-[to_bottom,_#10101000,_#101010_60%]">
                   </div>
                   <div id="title-wrapper" className="flex flex-col gap-[24px]">
                       <Header text="ABOUT ME" />
-                      <div id="text-hero" className="lg:text-[56px] text-[42px] font-medium lg:leading-[56px] leading-[110%] tracking-[-1px] text-shadow-[0_4px_10px_#0057ff33,_0_-4px_10px_#ff5a0026,_0_0_30px_#fff3]">I'm passionate about creating beautiful products that <span id="text-hero-serif" className="font-gloock italic bg-clip-text text-transparent bg-linear-[to_bottom,_#f2f2f2_50%,_#f2f2f233] text-shadow-[0_4px_6px_#0057ff26,_0_-4px_6px_#ff5a001a,_0_0_20px_#ffffff40]">solve real problems.</span></div>
+                      <div id="text-hero" className="lg:text-[56px] sm:text-[42px] text-[7.9vw] font-medium lg:leading-[56px] leading-[110%] sm:tracking-[-1px] -tracking-[0.1vw] text-shadow-[0_4px_10px_#0057ff33,_0_-4px_10px_#ff5a0026,_0_0_30px_#fff3]">I'm passionate about creating beautiful products that <span id="text-hero-serif" className="font-gloock italic bg-clip-text text-transparent bg-linear-[to_bottom,_#f2f2f2_50%,_#f2f2f233] text-shadow-[0_4px_6px_#0057ff26,_0_-4px_6px_#ff5a001a,_0_0_20px_#ffffff40]">solve real problems.</span></div>
                   </div>
-                  <div id="info-block" className="grid grid-cols-2 gap-[48px]">
+                  <div id="info-block" className="flex flex-col-reverse sm:grid grid-cols-2 gap-[48px]">
                     <div id="col-left" className="flex flex-col gap-[48px] relative w-full z-3">
                       <ImgCard src="/info-pictures/main.jpeg" />
                       <div id="text" className="flex flex-col flex-1 gap-[24px] px-[24px] tracking-[0.4px] leading-[150%] text-[16px] text-[#f2f2f299]">
@@ -90,14 +90,14 @@ export default function Home() {
                         <div>Through putting my own projects together in Scratch, and playing around with the logic surrounding it, this rising curiosity and underlying passion kept building up.</div>
                       </div>
                     </div>
-                    <div id="col-right" className="flex flex-col relative w-full z-3 gap-[48px] pt-[48px]">
+                    <div id="col-right" className="flex sm:flex-col flex-col-reverse relative w-full z-3 gap-[48px] sm:pt-[48px]">
                       <div id="text">
                         <span id="emphasis" className="text-[18px] font-medium tracking-[0.4px] leading-[150%] text-[#f2f2f2e6]">This is my story — alongside some flicks from my recent competition at SUTD.</span>
                       </div>
                       <ImgCard src="/info-pictures/groupwork.jpg" />
                     </div>
                   </div>
-                  <div id="info-block" className="grid grid-cols-2 gap-[48px]">
+                  <div id="info-block" className="flex flex-col-reverse sm:grid grid-cols-2 gap-[48px]">
                     <div id="col-left" className="flex flex-col gap-[48px] relative w-full z-3">
                       <ImgCard src="/info-pictures/leaning.jpeg" />
                       <div id="text" className="flex flex-col flex-1 gap-[24px] px-[24px] tracking-[0.4px] leading-[150%] text-[16px] text-[#f2f2f299]">
@@ -106,7 +106,7 @@ export default function Home() {
                         <div>As I progressed to secondary education, I proudly represented my school in various competitions, bringing home significant achievements.</div>
                       </div>
                     </div>
-                    <div id="col-right" className="flex flex-col relative w-full z-3 gap-[48px] pt-[48px]">
+                    <div id="col-right" className="flex sm:flex-col flex-col-reverse relative w-full z-3 gap-[48px] sm:pt-[48px]">
                       <div id="text" className="flex flex-col gap-[24px] px-[24px] tracking-[0.4px] leading-[150%] text-[16px] text-[#f2f2f299]">
                         <span id="emphasis" className="text-[18px] font-medium tracking-[0.4px] leading-[150%] text-[#f2f2f2e6]">But, I wanted more.</span>
                         <div>Though I loved the freedom of practicing computer science, I was greatly dissatisfied with just how slow the activities actually moved.</div>
@@ -115,7 +115,7 @@ export default function Home() {
                       <ImgCard src="/info-pictures/robotics.jpg" />
                     </div>
                   </div>
-                  <div id="info-block" className="grid grid-cols-2 gap-[48px]">
+                  <div id="info-block" className="flex flex-col-reverse sm:grid grid-cols-2 gap-[48px]">
                     <div id="col-left" className="flex flex-col gap-[48px] relative w-full z-3">
                       <ImgCard src="/info-pictures/gazing.jpeg" />
                       <div id="text" className="flex flex-col flex-1 gap-[24px] px-[24px] tracking-[0.4px] leading-[150%] text-[16px] text-[#f2f2f299]">
@@ -129,7 +129,7 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-                    <div id="col-right" className="flex flex-col relative w-full z-3 gap-[48px] pt-[48px]">
+                    <div id="col-right" className="flex sm:flex-col flex-col-reverse relative w-full z-3 gap-[48px] sm:pt-[48px]">
                       <div id="text" className="flex flex-col gap-[24px] px-[24px] tracking-[0.4px] leading-[150%] text-[16px] text-[#f2f2f299]">
                         <span id="emphasis" className="text-[18px] font-medium tracking-[0.4px] leading-[150%] text-[#f2f2f2e6]">Using what I loved.</span>
                         <div>My passion for software extended to teaching, where I regularly guided other students in my free time, sharing my knowledge to help them discover the same joy.</div>
@@ -142,17 +142,17 @@ export default function Home() {
                 </div>
               
                 <div id="section-divider" className="flex flex-col items-center">
-                  <div id="container-general" className="flex flex-col w-[882px] gap-[96px]">
+                  <div id="container-general" className="flex flex-col w-full sm:w-[882px] gap-[96px]">
                     <div id="divider-wrapper" className="flex gap-[8px] items-center">
                       <div id="divider-line" className="flex-1 h-[1px] bg-[#f2f2f233]"></div>
                     </div>
                   </div>
                 </div>
               
-                <div id="section-experience" className="flex flex-col pt-[72px] pb-[120px] relative z-1 gap-[56px] items-center">
-                  <div id="content" className="flex flex-col gap-[64px] align-start w-[882px]">
+                <div id="section-experience" className="flex flex-col pt-[56px] sm:pt-[72px] px-[16px] sm:px-0 pb-[120px] relative z-1 gap-[56px] items-center">
+                  <div id="content" className="flex flex-col gap-[32px] sm:gap-[64px] align-start lg:w-[1044px] sm:w-[882px]">
                     <Header text="EXPERIENCE" />
-                    <div id="block" className="grid gap-x-[48px] gap-y-[16px] justify-between grid-cols-2">
+                    <div id="block" className="flex flex-col sm:grid gap-x-[48px] gap-y-[16px] justify-between grid-cols-2">
                       <div id="content-leading" className="flex flex-col gap-[16px] font-medium -tracking-[0.1px] text-[40px] leading-[125%]">Rimebound Studios</div>
                       <div id="content-experience" className="flex flex-col gap-[20px] pt-[20px]">
                         <div id="title-date" className="flex flex-col gap-[8px]">
@@ -162,7 +162,7 @@ export default function Home() {
                         <div id="body-info" className="flex-1 leading-[150%] font-normal tracking-[0.4px] text-[16px] text-[#f2f2f299]"> I took on responsibilities - mentoring developers, building requested features and optimising the existing codebase.</div>
                       </div>
                     </div>
-                    <div id="block" className="grid gap-x-[48px] gap-y-[16px] justify-between grid-cols-2">
+                    <div id="block" className="flex flex-col sm:grid gap-x-[48px] gap-y-[16px] justify-between grid-cols-2">
                       <div id="content-leading" className="flex flex-col gap-[16px] font-medium -tracking-[0.1px] text-[40px] leading-[125%]">Pasir Ris Secondary</div>
                       <div id="content-experience" className="flex flex-col gap-[20px] pt-[20px]">
                         <div id="title-date" className="flex flex-col gap-[8px]">

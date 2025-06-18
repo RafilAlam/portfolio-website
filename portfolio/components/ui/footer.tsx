@@ -11,7 +11,7 @@ export default function Footer(props: any) {
     return (
         <footer id="container-footer" className="flex flex-col lg:w-[1044px] w-full gap-[64px]">
             <div id="footer-top" className="flex justify-between items-start">
-                <Image src="/logo.svg" className="inline" width="42" height="42" alt="Logo"></Image>
+                <Image src="/logo.svg" className="hidden sm:inline" width="42" height="42" alt="Logo"></Image>
                 <div id="footer-links-wrapper" className="flex gap-[32px]">
                     <div id="footer-links-column" className="flex flex-col gap-[16px] lg:w-[106px] w-[80px]"> 
                         <div id="text-footer-header" className="opacity-50 tracking-[1.5px] leading-[13px] text-[9px] font-medium">MAIN</div>
@@ -39,12 +39,12 @@ export default function Footer(props: any) {
                     </div>
                 </div>
             </div>
-            <div id="footer-bottom" className="flex flex-1 align-end  justify-between">
+            <div id="footer-bottom" className="flex flex-col sm:flex-row flex-1 align-end  justify-between gap-3 sm:gap-0">
                 <div id="bottom-left" className="flex flex-col flex-1 justify-end">
-                    <div id="copyright" className="tracking-[0.2px] text-[16px] font-medium leading-[24px]">© 2025 Rafil Alam. All Rights Reserved.</div>
-                    <div id="copyright-under" className="opacity-50 tracking-[0.2px] text-[14px]">Made with love and Iced Lemon Teas (50% sugar, less ice).</div>
+                    <div id="copyright" className="tracking-[0.2px] text-[14px] sm:text-[16px] font-medium leading-[18px] sm:leading-[24px]">© 2025 Rafil Alam. All Rights Reserved.</div>
+                    <div id="copyright-under" className="opacity-50 tracking-[0.2px] text-[12px] sm:text-[14px]">Made with love and Iced Lemon Teas (50% sugar, less ice).</div>
                 </div>
-                <div id="bottom-right" className="flex flex-col flex-1 justify-end items-end">
+                <div id="bottom-right" className="flex flex-col flex-1 justify-end sm:items-end">
                     <div id="message" className="opacity-50 tracking-[0.2px] leading-[20px] text-[12px] font-normal">Welcome to the end friend -<span className="text-[25px] font-bold transform translate-y-[1px] inline-block">☺</span></div>
                 </div>
             </div>
