@@ -65,7 +65,7 @@ export default function Home() {
 
   return (
       <div id="body">
-        <div id="section-nav" className="z-10 flex fixed w-full pt-[24px] pl-[48px] pr-[48px] bg-linear-[#0006,#0000]">
+        <div id="section-nav" className="z-10 flex fixed w-full pt-[24px] px-[24px] sm:px-[48px] bg-linear-[#0006,#0000]">
               <Navbar tab="2" />
         </div>
         <div id="smooth-scroll">
