@@ -91,7 +91,7 @@ export default function Home() {
                       <div id="text">
                         <span id="emphasis" className="text-[18px] font-medium tracking-[0.4px] leading-[150%] text-[#f2f2f2e6]">This is my story — alongside some flicks from my recent competition at SUTD.</span>
                       </div>
-                      <ImgCard src="/info-pictures/groupwork.jpg" />
+                      <ImgCard src="/info-pictures/groupwork.JPG" />
                     </div>
                   </div>
                   <div id="info-block" className="flex flex-col-reverse sm:grid grid-cols-2 gap-[48px]">
@@ -109,7 +109,7 @@ export default function Home() {
                         <div>Though I loved the freedom of practicing computer science, I was greatly dissatisfied with just how slow the activities actually moved.</div>
                         <div>I wanted to push my learning at a faster pace and delve into more of what my mind was itching to get into.</div>
                       </div>
-                      <ImgCard src="/info-pictures/robotics.jpg" />
+                      <ImgCard src="/info-pictures/robotics.JPG" />
                     </div>
                   </div>
                   <div id="info-block" className="flex flex-col-reverse sm:grid grid-cols-2 gap-[48px]">
