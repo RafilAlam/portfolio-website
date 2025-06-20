@@ -2,12 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from 'next/navigation';
-import { useRef } from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 
-export default function Footer(props: any) {
+export default function Footer() {
     return (
         <footer id="container-footer" className="flex flex-col lg:w-[1044px] w-full gap-[64px]">
             <div id="footer-top" className="flex justify-between items-start">

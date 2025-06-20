@@ -4,14 +4,11 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
-import { useGSAP } from "@gsap/react";
 import Image from "next/image";
-import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollSmoother);
 
-import { Button } from "@/components/ui/button";
 import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
 import Hero from "@/components/ui/hero";
@@ -23,7 +20,7 @@ export default function Home() {
   const arrowref = useRef(null);
 
   useEffect(() => {
-    const smoother = ScrollSmoother.create({
+    ScrollSmoother.create({
       wrapper: "#smooth-scroll",
       content: "#smooth-content",
       smooth: 1,

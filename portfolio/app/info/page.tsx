@@ -4,17 +4,14 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
-import Image from "next/image";
-import Link from "next/link";
+
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollSmoother);
 
 import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
-import Hero from "@/components/ui/hero";
 import Header from "@/components/ui/header";
-import ProjectCard from "@/components/ui/projectcard"
 import ImgCard from "@/components/ui/imgcard";
 
 export default function Home() {
@@ -22,7 +19,7 @@ export default function Home() {
   const arrowref = useRef(null);
 
   useEffect(() => {
-    const smoother = ScrollSmoother.create({
+    ScrollSmoother.create({
       wrapper: "#smooth-scroll",
       content: "#smooth-content",
       smooth: 1,
@@ -79,7 +76,7 @@ export default function Home() {
                   </div>
                   <div id="title-wrapper" className="flex flex-col gap-[24px]">
                       <Header text="ABOUT ME" />
-                      <div id="text-hero" className="lg:text-[56px] sm:text-[42px] text-[7.9vw] font-medium lg:leading-[56px] leading-[110%] sm:tracking-[-1px] -tracking-[0.1vw] text-shadow-[0_4px_10px_#0057ff33,_0_-4px_10px_#ff5a0026,_0_0_30px_#fff3]">I'm passionate about creating beautiful products that <span id="text-hero-serif" className="font-gloock italic bg-clip-text text-transparent bg-linear-[to_bottom,_#f2f2f2_50%,_#f2f2f233] text-shadow-[0_4px_6px_#0057ff26,_0_-4px_6px_#ff5a001a,_0_0_20px_#ffffff40]">solve real problems.</span></div>
+                      <div id="text-hero" className="lg:text-[56px] sm:text-[42px] text-[7.9vw] font-medium lg:leading-[56px] leading-[110%] sm:tracking-[-1px] -tracking-[0.1vw] text-shadow-[0_4px_10px_#0057ff33,_0_-4px_10px_#ff5a0026,_0_0_30px_#fff3]">I&apos;m passionate about creating beautiful products that <span id="text-hero-serif" className="font-gloock italic bg-clip-text text-transparent bg-linear-[to_bottom,_#f2f2f2_50%,_#f2f2f233] text-shadow-[0_4px_6px_#0057ff26,_0_-4px_6px_#ff5a001a,_0_0_20px_#ffffff40]">solve real problems.</span></div>
                   </div>
                   <div id="info-block" className="flex flex-col-reverse sm:grid grid-cols-2 gap-[48px]">
                     <div id="col-left" className="flex flex-col gap-[48px] relative w-full z-3">
@@ -102,7 +99,7 @@ export default function Home() {
                       <ImgCard src="/info-pictures/leaning.jpeg" />
                       <div id="text" className="flex flex-col flex-1 gap-[24px] px-[24px] tracking-[0.4px] leading-[150%] text-[16px] text-[#f2f2f299]">
                         <span id="emphasis" className="text-[18px] font-medium tracking-[0.4px] leading-[150%] text-[#f2f2f2e6]">Making it all happen.</span>
-                        <div>Armed with a family laptop, I chased every bit of tech knowledge I could find in my spare time. Each new concept - from Python's clarity to C's complexity and the inner workings of the computer - felt like a natural puzzle to solve, drawing me deeper into the craft.</div>
+                        <div>Armed with a family laptop, I chased every bit of tech knowledge I could find in my spare time. Each new concept - from Python&apos;s clarity to C&apos;s complexity and the inner workings of the computer - felt like a natural puzzle to solve, drawing me deeper into the craft.</div>
                         <div>As I progressed to secondary education, I proudly represented my school in various competitions, bringing home significant achievements.</div>
                       </div>
                     </div>
@@ -120,8 +117,8 @@ export default function Home() {
                       <ImgCard src="/info-pictures/gazing.jpeg" />
                       <div id="text" className="flex flex-col flex-1 gap-[24px] px-[24px] tracking-[0.4px] leading-[150%] text-[16px] text-[#f2f2f299]">
                         <span id="emphasis" className="text-[18px] font-medium tracking-[0.4px] leading-[150%] text-[#f2f2f2e6]">In my spare time,</span>
-                        <div>I'm probably diving into more projects that spark my interest, or simply hanging out friends.</div>
-                        <div>Other than that, you'll find me playing badminton and football, hitting the gym, gaming and reading up on the latest tech.</div>
+                        <div>I&apos;m probably diving into more projects that spark my interest, or simply hanging out friends.</div>
+                        <div>Other than that, you&apos;ll find me playing badminton and football, hitting the gym, gaming and reading up on the latest tech.</div>
                         <br />
                         <div id="signing" >
                           <span id="emphasis" className="text-[18px] font-medium tracking-[0.4px] leading-[150%] text-[#f2f2f2e6]">Thanks for stopping by!</span>
@@ -157,7 +154,7 @@ export default function Home() {
                       <div id="content-experience" className="flex flex-col gap-[20px] pt-[20px]">
                         <div id="title-date" className="flex flex-col gap-[8px]">
                           <div id="title" className="tracking-[0.1px] shrink-[auto] pr-[24px] text-[24px] font-medium leading-[125%]">Contract Game Developer</div>
-                          <div id="date" className="text-[#f2f2f266] text-[16px] font-normal leading-[125%]">09/'24 - 01/'25</div>
+                          <div id="date" className="text-[#f2f2f266] text-[16px] font-normal leading-[125%]">09/&apos;24 - 01/&apos;25</div>
                         </div>
                         <div id="body-info" className="flex-1 leading-[150%] font-normal tracking-[0.4px] text-[16px] text-[#f2f2f299]"> I took on responsibilities - mentoring developers, building requested features and optimising the existing codebase.</div>
                       </div>
@@ -166,8 +163,8 @@ export default function Home() {
                       <div id="content-leading" className="flex flex-col gap-[16px] font-medium -tracking-[0.1px] text-[40px] leading-[125%]">Pasir Ris Secondary</div>
                       <div id="content-experience" className="flex flex-col gap-[20px] pt-[20px]">
                         <div id="title-date" className="flex flex-col gap-[8px]">
-                          <div id="title" className="tracking-[0.1px] shrink-[auto] pr-[24px] text-[24px] font-medium leading-[125%]">Chairperson of Tinkers' Club</div>
-                          <div id="date" className="text-[#f2f2f266] text-[16px] font-normal leading-[125%]">05/'24 - 06/'25</div>
+                          <div id="title" className="tracking-[0.1px] shrink-[auto] pr-[24px] text-[24px] font-medium leading-[125%]">Chairperson of Tinkers&apos; Club</div>
+                          <div id="date" className="text-[#f2f2f266] text-[16px] font-normal leading-[125%]">05/&apos;24 - 06/&apos;25</div>
                         </div>
                         <div id="body-info" className="flex-1 leading-[150%] font-normal tracking-[0.4px] text-[16px] text-[#f2f2f299]">I led and managed all club activities, teaching members in programming and data structures, and guiding teams to success in competitions.</div>
                       </div>

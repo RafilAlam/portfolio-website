@@ -1,14 +1,17 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from 'next/navigation';
 import { useState } from 'react'
 import { useRef } from "react";
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 
-export default function Navbar(props: any) {
+type props = {
+    tab: string;
+};
+
+export default function Navbar(props: props) {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [open, setOpen] = useState(false);
     const mobilenavbutton = useRef(null);
     const mobilenavxbutton = useRef(null);

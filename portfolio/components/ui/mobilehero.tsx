@@ -1,8 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
-import Header from "@/components/ui/header";
 import Icon from "@/components/ui/icon";
 
 export default function MobileHero() {

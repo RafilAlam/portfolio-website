@@ -1,9 +1,10 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
+type props = {
+    text: string;
+};
 
-export default function Header(props: any) {
+export default function Header(props: props) {
     return (
         <div id="wrapper" className="flex items-center gap-[12px] align-start">
             <div id="section-header-dot" className="rounded-[50%] w-[10px] h-[10px] bg-[#f2f2f2] shadow-[0_0_20px_#fff]"></div>

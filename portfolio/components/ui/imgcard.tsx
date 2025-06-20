@@ -1,9 +1,10 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
+type props = {
+    src: string;
+}
 
-export default function ImgCard(props: any) {
+export default function ImgCard(props: props) {
     return (
         <div id="card" className="z-3 relative lg:max-w-[1044px] max-w-[846px] lg:max-h-[696px] max-h-[588px] w-full">
             <div id="card-glare-outer" className="absolute inset-0 z-1 h-[1px] bg-linear-[to_right,_#0000_5%,_#fffc_35%,_#fff_50%,_#fffc_65%,_#0000_95%]"></div>
