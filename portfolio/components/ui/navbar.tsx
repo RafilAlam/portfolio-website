@@ -103,7 +103,7 @@ export default function Navbar(props: props) {
                 <Image src="/logo.svg" className="inline" width="42" height="42" alt="Logo"></Image>
                 <div id="logo-text">
                     <div id="logo-name" className="inline text-2xl ml-3">Rafil Alam</div>
-                    <div id="logo-title" className="text-[#f2f2f280] ml-3 text-[12px]">Software Engineer</div>
+                    <div id="logo-title" className="text-[#f2f2f280] font-medium ml-3 text-[12px]">Software Engineer</div>
                 </div>
             </div>
             <div id="nav-pill-wrapper" className="">

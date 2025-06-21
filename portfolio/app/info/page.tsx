@@ -99,7 +99,7 @@ export default function Home() {
                       <ImgCard src="/info-pictures/leaning.jpeg" />
                       <div id="text" className="flex flex-col flex-1 gap-[24px] px-[24px] tracking-[0.4px] leading-[150%] text-[16px] text-[#f2f2f299]">
                         <span id="emphasis" className="text-[18px] font-medium tracking-[0.4px] leading-[150%] text-[#f2f2f2e6]">Making it all happen.</span>
-                        <div>Armed with a family laptop, I chased every bit of tech knowledge I could find in my spare time. Each new concept - from Python&apos;s clarity to C&apos;s complexity and the inner workings of the computer - felt like a natural puzzle to solve, drawing me deeper into the craft.</div>
+                        <div>Armed with a family laptop, I spent my free time chasing every bit of tech knowledge I could find. Each new concept, from Python&apos;s clarity to C&apos;s complexity and understanding how computers truly work felt like a natural puzzle to solve. This led me deeper into the craft.</div>
                         <div>As I progressed to secondary education, I proudly represented my school in various competitions, bringing home significant achievements.</div>
                       </div>
                     </div>
@@ -130,7 +130,7 @@ export default function Home() {
                       <div id="text" className="flex flex-col gap-[24px] px-[24px] tracking-[0.4px] leading-[150%] text-[16px] text-[#f2f2f299]">
                         <span id="emphasis" className="text-[18px] font-medium tracking-[0.4px] leading-[150%] text-[#f2f2f2e6]">Using what I loved.</span>
                         <div>My passion for software extended to teaching, where I regularly guided other students in my free time, sharing my knowledge to help them discover the same joy.</div>
-                        <div>I also engaged in freelance work, applying my knowledge in a professional setting. Through this, I successfully completed several projects and earned my first S$200 from clients that loved my work.</div>
+                        <div>I also jumped into freelance work, where I applied my knowledge in the real world. I built some amazing connections, earning reliable pocket money from clients who genuinely love the projects I build.</div>
                       </div>
                       <ImgCard src="/info-pictures/seated2.jpg" />
                     </div>
@@ -154,9 +154,9 @@ export default function Home() {
                       <div id="content-experience" className="flex flex-col gap-[20px] pt-[20px]">
                         <div id="title-date" className="flex flex-col gap-[8px]">
                           <div id="title" className="tracking-[0.1px] shrink-[auto] pr-[24px] text-[24px] font-medium leading-[125%]">Contract Game Developer</div>
-                          <div id="date" className="text-[#f2f2f266] text-[16px] font-normal leading-[125%]">09/&apos;24 - 01/&apos;25</div>
+                          <div id="date" className="text-[#f2f2f266] text-[16px] font-normal leading-[125%]">09/&apos;24 - Present</div>
                         </div>
-                        <div id="body-info" className="flex-1 leading-[150%] font-normal tracking-[0.4px] text-[16px] text-[#f2f2f299]"> I took on responsibilities - mentoring developers, building requested features and optimising the existing codebase.</div>
+                        <div id="body-info" className="flex-1 leading-[150%] font-normal tracking-[0.4px] text-[16px] text-[#f2f2f299]"> I take on responsibilities - mentoring developers, building requested features and optimising the existing codebase.</div>
                       </div>
                     </div>
                     <div id="block" className="flex flex-col sm:grid gap-x-[48px] gap-y-[16px] justify-between grid-cols-2">
@@ -164,9 +164,9 @@ export default function Home() {
                       <div id="content-experience" className="flex flex-col gap-[20px] pt-[20px]">
                         <div id="title-date" className="flex flex-col gap-[8px]">
                           <div id="title" className="tracking-[0.1px] shrink-[auto] pr-[24px] text-[24px] font-medium leading-[125%]">Chairperson of Tinkers&apos; Club</div>
-                          <div id="date" className="text-[#f2f2f266] text-[16px] font-normal leading-[125%]">05/&apos;24 - 06/&apos;25</div>
+                          <div id="date" className="text-[#f2f2f266] text-[16px] font-normal leading-[125%]">05/&apos;24 - Present</div>
                         </div>
-                        <div id="body-info" className="flex-1 leading-[150%] font-normal tracking-[0.4px] text-[16px] text-[#f2f2f299]">I led and managed all club activities, teaching members in programming and data structures, and guiding teams to success in competitions.</div>
+                        <div id="body-info" className="flex-1 leading-[150%] font-normal tracking-[0.4px] text-[16px] text-[#f2f2f299]"> I lead club operations, mentor members in programming, lead teams to competition goals, and independently develop software to optimise school functions.</div>
                       </div>
                     </div>
                   </div>
