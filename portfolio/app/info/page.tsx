@@ -13,6 +13,7 @@ import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
 import Header from "@/components/ui/header";
 import ImgCard from "@/components/ui/imgcard";
+import SmallCard from "@/components/ui/smallcard";
 
 export default function Home() {
   const smootherRef = useRef<ScrollSmoother | null>(null);
@@ -171,6 +172,30 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+
+                <div id="section-divider" className="flex flex-col items-center">
+                  <div id="container-general" className="flex flex-col w-full sm:w-[882px] gap-[96px]">
+                    <div id="divider-wrapper" className="flex gap-[8px] items-center">
+                      <div id="divider-line" className="flex-1 h-[1px] bg-[#f2f2f233]"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="section-" className="flex flex-col pt-[56px] sm:pt-[72px] px-[16px] sm:px-0 pb-[120px] relative z-1 gap-[56px] items-center">
+                  <div id="content" className="flex flex-col gap-[32px] sm:gap-[64px] align-start lg:w-[1044px] sm:w-[882px]">
+                    <Header text="RECOGNITION" />
+                    <div id="block" className="grid gap-x-[16px] gap-y-[16px] justify-between sm:grid-cols-4">
+                      <SmallCard title="Harvard" company="Computer Science Fundamentals" glowcolor="#a51c30" src="certificates/cs50x.png" href="https://certificates.cs50.io/feaf15c3-7356-45dc-ad74-b7b612dcd021.pdf?size=letter" />
+                      <SmallCard title="HR" company="Problem Solving / DSA" glowcolor="#189d78" src="certificates/hrpsbasic.png" href="https://www.hackerrank.com/certificates/4deebd3694a0"  />
+                      <SmallCard title="🥈SUTD" company="Silver Medal Award C++ / Robotics" glowcolor="#195a9b" src="certificates/roboroarz.png" href="https://certificates.cs50.io/feaf15c3-7356-45dc-ad74-b7b612dcd021.pdf?size=letter" />
+                      <SmallCard title="NOI" company="C++ Competitive Programming" glowcolor="#189d78" src="certificates/noi.png" href="https://certificates.cs50.io/feaf15c3-7356-45dc-ad74-b7b612dcd021.pdf?size=letter" />
+                    </div>
+                    <div id="block" className="flex sm:grid gap-x-[48px] gap-y-[16px] justify-between grid-cols-2">
+                      
+                    </div>
+                  </div>
+                </div>
+
                 <div id="section-footer" className="flex relative justify-center border-t-[1px] border-t-[#f2f2f21a] pt-[88px] pb-[80px] px-[48px]">
                   <Footer />
                 </div>
