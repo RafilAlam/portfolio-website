@@ -4,6 +4,7 @@ import Image from "next/image";
 
 type props = {
     href: string;
+    description: string;
     title: string;
     company: string;
     src: string;
@@ -25,6 +26,7 @@ export default function SmallCard(props: props) {
                             </div>
                             <div id="description-row" className="text-[#f2f2f280] tracking-[0.2px] lg:text-[16px] text-[14px] leading-[20px]">
                                 <span id="company" className="text-[#f2f2f2cc] font-medium">{props.company} </span>
+                                {props.description}
                             </div>
                         </div>
                         <div id="card-thumbnail" className="flex justify-center">

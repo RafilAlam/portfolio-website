@@ -84,7 +84,7 @@ export default function Home() {
             <div id="section-projects" className="z-1 w-full flex flex-col relative gap-[48px] pt-[24px] pb-[200px] pl-[28px] pr-[28px] items-center bg-[#101010]">
               <ProjectCard title="Art Buddy" href="https://github.com/RafilAlam/ArtBuddy-WebApp" glowcolor="#090315" company="Pasir Ris Secondary, '25" description="Giving student artists easy access to inspirational artworks." src="/project-thumbnails/artbuddy.png" />
               <ProjectCard title="AI Reader" href="https://github.com/RafilAlam/AI-Reader" glowcolor="#272828" company="Personal Project, '24" description="Providing researchers, the elderly and visually challenged readers a break." src="/project-thumbnails/ai-reader.png" />
-              <ProjectCard title="TrackMate" href="https://github.com/RafilAlam/TrackMate-App" glowcolor="#1c1320" company="Personal Project, '23" description="Keeping track of what's important all in one place." src="/project-thumbnails/trackmate.png" />
+              <ProjectCard title="TrackMate" href="https://github.com/RafilAlam/TrackMate-App" glowcolor="#261d2a" company="Personal Project, '23" description="Keeping track of what's important all in one place." src="/project-thumbnails/trackmate.png" />
             </div>
             <div id="section-footer" className="flex relative justify-center border-t-[1px] border-t-[#f2f2f21a] pt-[88px] pb-[80px] px-[20px] sm:px-[48px]">
               <Footer />

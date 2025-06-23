@@ -181,18 +181,36 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div id="section-" className="flex flex-col pt-[56px] sm:pt-[72px] px-[16px] sm:px-0 pb-[120px] relative z-1 gap-[56px] items-center">
-                  <div id="content" className="flex flex-col gap-[32px] sm:gap-[64px] align-start lg:w-[1044px] sm:w-[882px]">
+                <div id="section-" className="flex flex-col pt-[56px] sm:pt-[72px] px-[16px] sm:px-0 pb-[120px] relative z-1 items-center">
+                  <div id="content" className="flex flex-col gap-[64px] align-start lg:w-[1044px] sm:w-[882px]">
                     <Header text="RECOGNITION" />
-                    <div id="block" className="grid gap-x-[16px] gap-y-[16px] justify-between sm:grid-cols-4">
-                      <SmallCard title="Harvard" company="Computer Science Fundamentals" glowcolor="#a51c30" src="certificates/cs50x.png" href="https://certificates.cs50.io/feaf15c3-7356-45dc-ad74-b7b612dcd021.pdf?size=letter" />
-                      <SmallCard title="HR" company="Problem Solving / DSA" glowcolor="#189d78" src="certificates/hrpsbasic.png" href="https://www.hackerrank.com/certificates/4deebd3694a0"  />
-                      <SmallCard title="🥈SUTD" company="Silver Medal Award C++ / Robotics" glowcolor="#195a9b" src="certificates/roboroarz.png" href="https://certificates.cs50.io/feaf15c3-7356-45dc-ad74-b7b612dcd021.pdf?size=letter" />
-                      <SmallCard title="NOI" company="C++ Competitive Programming" glowcolor="#189d78" src="certificates/noi.png" href="https://certificates.cs50.io/feaf15c3-7356-45dc-ad74-b7b612dcd021.pdf?size=letter" />
+                    
+                    <div id="block" className="flex flex-col gap-[20px]">
+                      <div id="block-title" className="flex items-center gap-3 text-[24px] font-medium">
+                        <div id="title">Certifications</div>
+                        <a id="view-button" className="text-[14px] hover:opacity-100 opacity-80 bg-linear-[190deg,_#252525,_#101010] shadow-[inset_0_0_10px_#0000001a,_0_0_12px_#0006] hover:border-[#888] transition-colors duration-400 ease-[cubic-bezier(.165,.84,.44,1)] border-[#3d3d3d] border-[1px] rounded-[10px] p-1 px-2" href="https://github.com/RafilAlam/Certificates" target="_blank">View more</a>
+                      </div>
+                      <div id="row" className="grid gap-x-[16px] gap-y-[16px] justify-between sm:grid-cols-2">
+                            <SmallCard title="Harvard" company="Computer Science Fundamentals" description="" glowcolor="#a51c30" src="certificates/cs50x.png" href="https://certificates.cs50.io/feaf15c3-7356-45dc-ad74-b7b612dcd021.pdf?size=letter" />
+                            <SmallCard title="HackerRank" company="Problem Solving / DSA Thinking" description="" glowcolor="#189d78" src="certificates/hrpsbasic.png" href="https://www.hackerrank.com/certificates/4deebd3694a0"  />
+                            <SmallCard title="🥈SUTD" company="Silver Medal Award C++ / Robotics" description="" glowcolor="#195a9b" src="certificates/roboroarz.png" href="https://certificates.cs50.io/feaf15c3-7356-45dc-ad74-b7b612dcd021.pdf?size=letter" />
+                            <SmallCard title="NOI" company="C++ Competitive Programming" description="" glowcolor="#b48921" src="certificates/noi.png" href="https://certificates.cs50.io/feaf15c3-7356-45dc-ad74-b7b612dcd021.pdf?size=letter" />
+                      </div>
                     </div>
-                    <div id="block" className="flex sm:grid gap-x-[48px] gap-y-[16px] justify-between grid-cols-2">
-                      
+
+                    <div id="block" className="flex flex-col gap-[12px]">
+                      <div id="block-title" className="flex items-center gap-3 text-[24px] font-medium">
+                        <div id="title">Testimonials</div>
+                        <a id="view-button" className="text-[14px] hover:opacity-100 opacity-80 bg-linear-[190deg,_#252525,_#101010] shadow-[inset_0_0_10px_#0000001a,_0_0_12px_#0006] group hover:border-[#888] transition-colors duration-400 ease-[cubic-bezier(.165,.84,.44,1)] border-[#3d3d3d] border-[1px] rounded-[10px] p-1 px-2" href="https://github.com/RafilAlam/Testimonials" target="_blank">View more</a>
+                      </div>
+                      <div id="row" className="grid gap-x-[16px] gap-y-[16px] justify-between sm:grid-cols-2">
+                            <SmallCard title="Rimebound Studios" company="Lukas" description="- CEO" glowcolor="#55a3ad" src="testimonials/lukas.png" href="https://github.com/RafilAlam/Testimonials/blob/main/lukas_rimebound_09-05-2025.pdf" />
+                            <SmallCard title="Singapore Polytechnic" company="Mr. Ong" description="- Center Director, ENGG" glowcolor="#770000" src="testimonials/sp.png" href="https://github.com/RafilAlam/Testimonials/blob/main/Testimonial%20-%20Centre%20Director%20of%20Singapore%20Polyechnic.pdf" />
+                            <SmallCard title="CCA" company="Mr. Teo" description="- In-Charge" glowcolor="#4b4675" src="testimonials/mrteo.png" href="https://github.com/RafilAlam/Testimonials/blob/main/Testimonial%20-%20Teacher-In-Charge%20of%20CCA.pdf" />
+                            <SmallCard title="Friend" company="Salman" description="- Mentee" glowcolor="#467552" src="testimonials/salman.png" href="https://www.hackerrank.com/certificates/4deebd3694a0"  />
+                      </div>
                     </div>
+
                   </div>
                 </div>
 
