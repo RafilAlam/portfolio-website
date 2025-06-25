@@ -13,7 +13,8 @@ import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
 import Hero from "@/components/ui/hero";
 import MobileHero from "@/components/ui/mobilehero";
-import ProjectCard from "@/components/ui/projectcard"
+import ProjectCard from "@/components/ui/projectcard";
+import ProjectVid from "@/components/ui/projectvid";
 
 export default function Home() {
   const smootherRef = useRef<ScrollSmoother | null>(null);
@@ -84,7 +85,12 @@ export default function Home() {
             <div id="section-projects" className="z-1 w-full flex flex-col relative gap-[48px] pt-[24px] pb-[200px] pl-[28px] pr-[28px] items-center bg-[#101010]">
               <ProjectCard title="Art Buddy" href="https://github.com/RafilAlam/ArtBuddy-WebApp" glowcolor="#090315" company="Pasir Ris Secondary, '25" description="Giving student artists easy access to inspirational artworks." src="/project-thumbnails/artbuddy.png" />
               <ProjectCard title="AI Reader" href="https://github.com/RafilAlam/AI-Reader" glowcolor="#272828" company="Personal Project, '24" description="Providing researchers, the elderly and visually challenged readers a break." src="/project-thumbnails/ai-reader.png" />
-              <ProjectCard title="TrackMate" href="https://github.com/RafilAlam/TrackMate-App" glowcolor="#261d2a" company="Personal Project, '23" description="Keeping track of what's important all in one place." src="/project-thumbnails/trackmate.png" />
+              <ProjectCard title="TrackMate" href="https://github.com/RafilAlam/TrackMate-App" glowcolor="#1b0231" company="Personal Project, '23" description="Keeping track of what's important all in one place." src="/project-thumbnails/trackmate.png" />
+              <ProjectVid title="RTS Framework" enabled={false} href="https://github.com/RafilAlam/TrackMate-App" glowcolor="#22252e" company="Commission Work, '25" description="Real-Time-Strategy System" src="/project-thumbnails/rts.mp4" />
+              <ProjectVid title="Car AI" enabled={false} href="https://github.com/RafilAlam/TrackMate-App" glowcolor="#38311c" company="Commission Work, '24" description="Self-Driving Car that navigates to points." src="/project-thumbnails/aicar.mp4" />
+              <ProjectVid title="Plane AI" enabled={false} href="https://github.com/RafilAlam/TrackMate-App" glowcolor="#5d6460" company="Commission Work, '25" description="Self-Flying Plane with configurable flight patterns" src="/project-thumbnails/aiplane.mp4" />
+              <ProjectVid title="Sideways" enabled={true} href="https://www.roblox.com/games/98191562367578/sideways" glowcolor="#46513a" company="Personal Project, '24" description="Immersive drifting game with realistic physics simulation." src="/project-thumbnails/sideways.mp4" />
+              <ProjectVid title="Insurgency" enabled={true} href="https://www.roblox.com/games/113066182665321/Insurgency" glowcolor="#020b10" company="Personal Project, '25" description="Tactical shooter with a bodycam perspective" src="/project-thumbnails/insurgency.mp4" />
             </div>
             <div id="section-footer" className="flex relative justify-center border-t-[1px] border-t-[#f2f2f21a] pt-[88px] pb-[80px] px-[20px] sm:px-[48px]">
               <Footer />
