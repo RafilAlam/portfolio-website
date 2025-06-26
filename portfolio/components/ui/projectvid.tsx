@@ -14,10 +14,9 @@ type props = {
 };
 
 export default function ProjectVid(props: props) {
-    const vidRef = useRef<HTMLVideoElement>(null);
 
     return (
-        <a id="card" href={props.href} target="_blank" className={`${props.enabled ? "cursor-pointer" : "cursor-default"} z-3 relative lg:max-w-[1044px] max-w-[846px] lg:max-h-[696px] sm:max-h-[588px] w-full`} onClick={(e) => { if (!props.enabled) e.preventDefault(); }}>
+        <a id="card" href={props.href} target="_blank" className={`${props.enabled ? "cursor-pointer" : "cursor-default"} z-3 relative lg:max-w-[1044px] max-w-[846px] lg:max-h-[696px] sm:max-h-[588px] w-full`}>
             <div id="card-glare-outer" className="absolute inset-0 z-1 h-[1px] bg-linear-[to_right,_#0000_5%,_#fffc_35%,_#fff_50%,_#fffc_65%,_#0000_95%]"></div>
             <div id="card-outline" className="p-[9px] w-full lg:h-[696px] aspect-square sm:h-[588px] outline-[1px] outline-offset-[-1px] outline-[#f2f2f226] rounded-[24px] bg-[#f2f2f20a] shadow-[0_40px_80px_#00000080]">
                 <div id="card-glare-inner" className="h-[2px] mb-[-1px] bg-linear-[to_right,_#0000_10%,_#fff_50%,_#0000_90%]"></div>
@@ -34,7 +33,7 @@ export default function ProjectVid(props: props) {
                             </div>
                         </div>
                         <div id="card-thumbnail" className="flex justify-center">
-                            <video ref={vidRef} className="z-1 relative rounded-[7px] shadow-[0_40px_50px_10px_#00000040] max-w-9/10 w-full h-full group-hover:-translate-y-5 duration-300 ease-out transition-transform" muted loop>
+                            <video className="z-1 relative rounded-[7px] shadow-[0_40px_50px_10px_#00000040] max-w-9/10 w-full h-full group-hover:-translate-y-5 duration-300 ease-out transition-transform" autoPlay muted loop>
                                 <source src={props.src} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
