@@ -32,7 +32,7 @@ export default function ProjectVid(props: props) {
                             </div>
                         </div>
                         <div id="card-thumbnail" className="flex justify-center">
-                            <video className="z-1 relative rounded-[7px] shadow-[0_40px_50px_10px_#00000040] max-w-9/10 w-full h-full group-hover:-translate-y-5 duration-300 ease-out transition-transform" autoPlay muted loop>
+                            <video className="z-1 relative rounded-[7px] shadow-[0_40px_50px_10px_#00000040] max-w-9/10 w-full h-full group-hover:-translate-y-5 duration-300 ease-out transition-transform" playsInline autoPlay muted loop>
                                 <source src={props.src} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
