@@ -23,12 +23,12 @@ export default function Hero() {
                         <div id="text-hero" className="lg:text-[85px] text-[8.2vw] font-medium leading-18 tracking-[-2px] text-shadow-[0_5px_10px_#0057ff26,_0_-5px_10px_#ff5a001a,_0_-5px_25px_#ffffff4d]">I craft tools & platforms that <span id="text-hero-serif" className="font-gloock italic bg-clip-text text-transparent bg-linear-[to_bottom,_#f2f2f2_50%,_transparent_100%] text-shadow-[0_5px_15px_#0057ff1a,_0_-5px_15px_#ff5a0014,_0_0_30px_#fff3]">empower.</span></div>
                         <div id="about-hero" className="grid grid-cols-2 gap-[2vw]">
                             <div id="skills" className="flex w-fit  gap-1 p-1 border-[2px] border-[#f2f2f226] rounded-[16px] bg-[#101010]">
-                                <Icon src="/icons/python.png" name="Python" href="https://www.python.org/" />
-                                <Icon src="/icons/c++.png" name="C++" href="https://cplusplus.com/" />
-                                <Icon src="/icons/js.png" name="JavaScript" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" />
-                                <Icon src="/icons/lua.png" name="Lua" href="https://www.lua.org/home.html" />
-                                <Icon src="/icons/nextjs.png" name="NextJS" href="https://nextjs.org/" />
-                                <Icon src="/icons/react.png" name="React" href="https://react.dev/" />
+                                <Icon hidden={true} src="/icons/python.png" name="Python" href="https://www.python.org/" />
+                                <Icon hidden={true} src="/icons/c++.png" name="C++" href="https://cplusplus.com/" />
+                                <Icon hidden={true} src="/icons/js.png" name="JavaScript" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" />
+                                <Icon hidden={true} src="/icons/lua.png" name="Lua" href="https://www.lua.org/home.html" />
+                                <Icon hidden={true} src="/icons/nextjs.png" name="NextJS" href="https://nextjs.org/" />
+                                <Icon hidden={true} src="/icons/react.png" name="React" href="https://react.dev/" />
                             </div>
                             <div id="about" className="lg:text-[24px] text-[2.2vw] font-medium">Freelance Developer. Open to Work.<br/> <span className="text-[#f2f2f280] font-normal">Based in Singapore.</span> </div>
                         </div>

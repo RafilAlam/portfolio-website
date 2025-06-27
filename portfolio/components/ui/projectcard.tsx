@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Icon from "@/components/ui/icon";
 
 type props = {
     href: string;
@@ -9,6 +10,12 @@ type props = {
     company: string;
     src: string;
     glowcolor: string;
+    py?: boolean;
+    cpp?: boolean;
+    js?: boolean;
+    lua?: boolean;
+    nextjs?: boolean;
+    react?: boolean;
 };
 
 export default function ProjectCard(props: props) {
@@ -21,7 +28,17 @@ export default function ProjectCard(props: props) {
                     <div id="card-content" className="flex relative flex-col gap-[64px] z-5 pt-[32px] pl-[28px] pr-[28px]">
                         <div id="card-top" className="z-1 flex flex-col relative gap-[8px]">
                             <div id="title-row" className="flex justify-between text-shadow-[0_-2px_10px_#fff3] tracking-0">
-                                <div id="title" className="flex text-[24px] font-medium">{props.title}</div>
+                                <div id="title" className="flex text-[24px] gap-2 items-center font-medium">
+                                    {props.title}
+                                    <div id="skills" className="flex w-fit max-h-[45px] gap-1 p-1 border-[2px] border-[#f2f2f226] rounded-[16px] bg-[#101010]">
+                                        <Icon hidden={props.py} src="/icons/python.png" name="Python" href="https://www.python.org/" />
+                                        <Icon hidden={props.cpp} src="/icons/c++.png" name="C++" href="https://cplusplus.com/" />
+                                        <Icon hidden={props.js} src="/icons/js.png" name="JavaScript" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" />
+                                        <Icon hidden={props.lua} src="/icons/lua.png" name="Lua" href="https://www.lua.org/home.html" />
+                                        <Icon hidden={props.nextjs} src="/icons/nextjs.png" name="NextJS" href="https://nextjs.org/" />
+                                        <Icon hidden={props.react} src="/icons/react.png" name="React" href="https://react.dev/" />
+                                    </div>    
+                                </div>
                                 <Image id="arrow" className="group-hover:translate-x-2 ease-out duration-500" src="https://web.archive.org/web/20240904115935im_/https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/641284285486aaab07feafaa_icon-arrow-project.svg" width="32" height="32" alt=""></Image>
                             </div>
                             <div id="description-row" className="text-[#f2f2f280] tracking-[0.2px] lg:text-[16px] text-[14px] leading-[20px]">
