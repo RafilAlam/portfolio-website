@@ -187,14 +187,27 @@ export default function Home() {
                     
                     <div id="block" className="flex flex-col gap-[20px]">
                       <div id="block-title" className="flex items-center gap-3 text-[24px] font-medium">
+                        <div id="title">Awards</div>
+                        <a id="view-button" className="text-[14px] hover:opacity-100 opacity-80 bg-linear-[190deg,_#252525,_#101010] shadow-[inset_0_0_10px_#0000001a,_0_0_12px_#0006] hover:border-[#888] transition-colors duration-400 ease-[cubic-bezier(.165,.84,.44,1)] border-[#3d3d3d] border-[1px] rounded-[10px] p-1 px-2" href="https://github.com/RafilAlam/Awards" target="_blank">View more</a>
+                      </div>
+                      <div id="row" className="grid gap-x-[16px] gap-y-[16px] justify-between sm:grid-cols-2">
+                            <SmallCard title="🥈SUTD" company="Silver Medal Award C++ / Robotics" description="" glowcolor="#195a9b" src="awards/roboroarz.png" href="https://github.com/RafilAlam/Awards/blob/main/SUTD%20RoboRoarZ%20-%20Silver%20Award.pdf" />
+                            <SmallCard title="🥉NYAA" company="Bronze Level Award VIA" description="" glowcolor="#d1af7b" src="awards/nyaa.png" href="https://github.com/RafilAlam/Awards/blob/main/NYAA%20-%20Bronze%20Award.pdf" />
+                            <SmallCard title="Pasir Ris Secondary" company="Best Team Player Award" description="" glowcolor="#2f6e2b" src="awards/prss.png" href="https://github.com/RafilAlam/Awards/blob/main/Camp%20Conquest%20-%20Best%20Team%20Player%20Award.pdf" />
+                            <SmallCard title="Singapore Polytechnic" company="Young Engineer Award" description="" glowcolor="#770000" src="awards/sp.png" href="https://github.com/RafilAlam/Awards/blob/main/Young%20Engineer%20Award%20-%20Singapore%20Polytechnic.pdf" />
+                      </div>
+                    </div>
+
+                    <div id="block" className="flex flex-col gap-[20px]">
+                      <div id="block-title" className="flex items-center gap-3 text-[24px] font-medium">
                         <div id="title">Certifications</div>
                         <a id="view-button" className="text-[14px] hover:opacity-100 opacity-80 bg-linear-[190deg,_#252525,_#101010] shadow-[inset_0_0_10px_#0000001a,_0_0_12px_#0006] hover:border-[#888] transition-colors duration-400 ease-[cubic-bezier(.165,.84,.44,1)] border-[#3d3d3d] border-[1px] rounded-[10px] p-1 px-2" href="https://github.com/RafilAlam/Certificates" target="_blank">View more</a>
                       </div>
                       <div id="row" className="grid gap-x-[16px] gap-y-[16px] justify-between sm:grid-cols-2">
                             <SmallCard title="Harvard" company="Computer Science Fundamentals" description="" glowcolor="#a51c30" src="certificates/cs50x.png" href="https://certificates.cs50.io/feaf15c3-7356-45dc-ad74-b7b612dcd021.pdf?size=letter" />
                             <SmallCard title="HackerRank" company="Problem Solving / DSA Thinking" description="" glowcolor="#189d78" src="certificates/hrpsbasic.png" href="https://www.hackerrank.com/certificates/4deebd3694a0"  />
-                            <SmallCard title="🥈SUTD" company="Silver Medal Award C++ / Robotics" description="" glowcolor="#195a9b" src="certificates/roboroarz.png" href="https://certificates.cs50.io/feaf15c3-7356-45dc-ad74-b7b612dcd021.pdf?size=letter" />
-                            <SmallCard title="NOI" company="C++ Competitive Programming" description="" glowcolor="#b48921" src="certificates/noi.png" href="https://certificates.cs50.io/feaf15c3-7356-45dc-ad74-b7b612dcd021.pdf?size=letter" />
+                            <SmallCard title="SUTD" company="C++ Competitive Programming" description="" glowcolor="#195a9b" src="certificates/sutd.png" href="https://github.com/RafilAlam/Certificates/blob/main/Competititon%20Certificates/SUTD%20ROBOROARZ%20-%20Certificate%20of%20Participation.pdf" />
+                            <SmallCard title="NOI" company="C++ Competitive Programming" description="" glowcolor="#b48921" src="certificates/noi.png" href="https://github.com/RafilAlam/Certificates/blob/main/Competititon%20Certificates/NUS%20NOI%20-%20Certificate%20of%20Participation.pdf" />
                       </div>
                     </div>
 
@@ -206,8 +219,8 @@ export default function Home() {
                       <div id="row" className="grid gap-x-[16px] gap-y-[16px] justify-between sm:grid-cols-2">
                             <SmallCard title="Rimebound Studios" company="Lukas" description="- CEO" glowcolor="#55a3ad" src="testimonials/lukas.png" href="https://github.com/RafilAlam/Testimonials/blob/main/lukas_rimebound_09-05-2025.pdf" />
                             <SmallCard title="Singapore Polytechnic" company="Mr. Ong" description="- Center Director, ENGG" glowcolor="#770000" src="testimonials/sp.png" href="https://github.com/RafilAlam/Testimonials/blob/main/Testimonial%20-%20Centre%20Director%20of%20Singapore%20Polyechnic.pdf" />
-                            <SmallCard title="CCA" company="Mr. Teo" description="- In-Charge" glowcolor="#4b4675" src="testimonials/mrteo.png" href="https://github.com/RafilAlam/Testimonials/blob/main/Testimonial%20-%20Teacher-In-Charge%20of%20CCA.pdf" />
-                            <SmallCard title="Friend" company="Salman" description="- Mentee" glowcolor="#467552" src="testimonials/salman.png" href="https://www.hackerrank.com/certificates/4deebd3694a0"  />
+                            <SmallCard title="CCA" company="Mr. Teo" description="- Teacher In-Charge" glowcolor="#4b4675" src="testimonials/mrteo.png" href="https://github.com/RafilAlam/Testimonials/blob/main/Testimonial%20-%20Teacher-In-Charge%20of%20CCA.pdf" />
+                            <SmallCard title="Friend" company="Salman" description="- Mentee" glowcolor="#467552" src="testimonials/salman.png" href="https://github.com/RafilAlam/Testimonials/blob/main/salman_peer_10-04-2025.pdf"  />
                       </div>
                     </div>
 
